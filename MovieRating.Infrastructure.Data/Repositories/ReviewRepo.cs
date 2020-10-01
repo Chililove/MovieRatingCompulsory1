@@ -6,5 +6,6 @@ namespace MovieRating.Infrastructure.Data
 {
    public class ReviewRepo
     {
+       
     }
 }

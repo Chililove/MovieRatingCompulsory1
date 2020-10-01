@@ -1,14 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using MovieRating.Core.AppService.Services;
 using MovieRating.Core.DataService;
 using MovieReview.Core.Entity;
-using Xunit.Sdk;
 
-namespace UnitTest
+namespace ReviewTesting
 {
     [TestClass]
-    public class UnitTestClass
+    public class UnitTest1
     {
         [TestMethod]
         public void Test1()
@@ -58,3 +57,5 @@ namespace UnitTest
     }
 
 }
+    
+
