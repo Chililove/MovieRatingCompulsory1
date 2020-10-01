@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MovieReview.Core.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MovieRating.Core.DataService
 {
-    interface IReviewRepo
+   public interface IReviewRepo
     {
+        IEnumerable<Review> GetAllReviews();
     }
 }
