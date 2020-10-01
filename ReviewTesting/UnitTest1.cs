@@ -53,6 +53,26 @@ namespace ReviewTesting
             Assert.IsTrue(aResult == 3);
         }
 
+        [TestMethod]
+        public void Test3()
+        {
+            Mock<IReviewRepo> mr = new Mock<IReviewRepo>();
+
+            Review[] value =
+              { new Review  {Reviewer = 1, Movie = 2, Grade = 3 },
+                new Review {Reviewer = 1, Movie = 1, Grade = 4 },
+                new Review {Reviewer = 1, Movie = 3, Grade = 3 },
+                new Review {Reviewer = 1, Movie = 4, Grade = 2 },
+                new Review {Reviewer = 2, Movie = 3, Grade = 2 },
+                new Review {Reviewer = 3, Movie = 3, Grade = 2 }
+            };
+            mr.Setup(mr => mr.GetAllReviews()).Returns(() => value);
+
+            ReviewService rService = new ReviewService(mr.Object);
+            int aResult = rService.GetNumberOfRatesByReviewer(1,3);
+            Assert.IsTrue(aResult == 2);
+        }
+
 
     }
 
