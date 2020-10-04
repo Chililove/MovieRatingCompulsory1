@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRatingCompulsory.UI", "MovieRatingCompulsory\MovieRatingCompulsory.UI.csproj", "{33A0A9A9-6457-485E-8F0F-B646DDBC7FEB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E582C91-0F5A-4C6B-B5B3-B7C16CFB1E7E} = {7E582C91-0F5A-4C6B-B5B3-B7C16CFB1E7E}
+		{24D99095-F1BF-42DC-9E26-5E494AEEFF84} = {24D99095-F1BF-42DC-9E26-5E494AEEFF84}
+		{8D45C2C9-2303-49F5-97D6-5FA68C779E58} = {8D45C2C9-2303-49F5-97D6-5FA68C779E58}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{7AB7D94D-AA82-42D4-BC94-F5E3F4B7367B}"
 EndProject
@@ -21,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRating.Infrastructure.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReview.Core.Entity", "MovieReview.Core.Etity\MovieReview.Core.Entity.csproj", "{7E582C91-0F5A-4C6B-B5B3-B7C16CFB1E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewTesting", "ReviewTesting\ReviewTesting.csproj", "{76A85AE9-E19D-4822-B5F0-A9874BB229AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewTesting", "ReviewTesting\ReviewTesting.csproj", "{76A85AE9-E19D-4822-B5F0-A9874BB229AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

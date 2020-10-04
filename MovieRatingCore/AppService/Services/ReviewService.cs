@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MovieRating.Core.AppService.Services
 {
-    public class ReviewService
+    public class ReviewService: IReviewService
     {
         IReviewRepo reviewRepo;
         public ReviewService(IReviewRepo rRepo)
