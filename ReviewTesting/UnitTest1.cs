@@ -152,7 +152,8 @@ namespace ReviewTesting
 
              mr.Verify(mr => mr.GetAllReviews(), Times.Once);
 
-            
+
+            Assert.IsTrue(result.Count == 2);
 
             // CollectionAssert.AllItemsAreUnique(result);
         }
