@@ -13,7 +13,7 @@ namespace MovieRating.Infrastructure.Data
     {
        public IEnumerable<Review> GetAllReviews()
         {
-            using (StreamReader r = new StreamReader("C:/Users/WøbbePC/Documents/file/ratings.json"))
+            using (StreamReader r = new StreamReader("C:/Users/mega_/Documents/files/ratings.json"))
             {
                 string json = r.ReadToEnd();
                 List<Review> reviews = JsonConvert.DeserializeObject<List<Review>>(json);
