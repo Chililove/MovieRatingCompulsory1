@@ -7,6 +7,7 @@ namespace MovieRating.Core.DataService
 {
    public interface IReviewRepo
     {
+        void InitializeData();
         IEnumerable<Review> GetAllReviews();
     }
 }

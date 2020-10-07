@@ -11,13 +11,21 @@ namespace MovieRating.Infrastructure.Data
 {
    public class ReviewRepo: IReviewRepo
     {
+
+       private IEnumerable<Review> reviewList;
+
        public IEnumerable<Review> GetAllReviews()
         {
-            using (StreamReader r = new StreamReader("C:/Users/mega_/Documents/files/ratings.json"))
+            return reviewList;
+        }
+
+        public void InitializeData()
+        {
+            using (StreamReader r = new StreamReader("C:/Users/WøbbePC/Documents/file/ratings.json"))
             {
                 string json = r.ReadToEnd();
                 List<Review> reviews = JsonConvert.DeserializeObject<List<Review>>(json);
-                return reviews;
+                reviewList = reviews;
             }
         }
 

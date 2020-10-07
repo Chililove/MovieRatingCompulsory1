@@ -15,7 +15,7 @@ namespace PerformanceTest
         public static void addJson(TestContext tc) 
         {
             repo = new ReviewRepo();
-
+            repo.InitializeData();
             repo.GetAllReviews();
         }
 
@@ -68,7 +68,7 @@ namespace PerformanceTest
         public void TestMethod5()
         {
             ReviewService rs = new ReviewService(repo);
-            rs.GetAverageRateOfMovie(1);
+            rs.GetAverageRateOfMovie(311232);
            
 
 
