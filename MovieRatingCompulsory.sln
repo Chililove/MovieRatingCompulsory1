@@ -28,9 +28,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReview.Core.Entity", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewTesting", "ReviewTesting\ReviewTesting.csproj", "{76A85AE9-E19D-4822-B5F0-A9874BB229AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTest", "PerformanceTest\PerformanceTest.csproj", "{F67C175A-434A-4CBF-B55A-172CE6C0A3B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceTest", "PerformanceTest\PerformanceTest.csproj", "{F67C175A-434A-4CBF-B55A-172CE6C0A3B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{3C5365D6-BB56-4726-8289-8FA41980FCA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{3C5365D6-BB56-4726-8289-8FA41980FCA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50E2B7C2-DB06-4781-97FC-97C0DFB02391}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
